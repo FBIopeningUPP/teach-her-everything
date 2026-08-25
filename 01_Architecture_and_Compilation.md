@@ -24,6 +24,25 @@ graph LR
 3. **Assembler:** Translates Assembly into **Machine Code** (binary).
 4. **Linker:** Takes your machine code and links it with pre-compiled libraries (like the code that actually prints to the screen in the OS) to create the final executable.
 
+## How to Actually Compile and Run (The `gcc` Command)
+Once you have written your code in a file (e.g., `main.c`), you need to tell the compiler to translate it into an executable. We use **GCC** (GNU Compiler Collection).
+
+### Step 1: Compile the Code
+Open your terminal in the same folder as your file and type:
+```bash
+gcc main.c -o myprogram.exe
+```
+* `gcc`: Calls the compiler.
+* `main.c`: The file you want to compile.
+* `-o myprogram.exe`: Tells it to "**o**utput" an executable named `myprogram.exe`.
+
+### Step 2: Run the Executable
+Now that the computer has a binary file it understands, you can run it:
+```bash
+.\myprogram.exe
+```
+*(The `.\` tells the terminal "look in the current folder" for `myprogram.exe`)*
+
 > [!tip] Nerd Note: Compilation Flags
 > When you run `gcc main.c`, it does all 4 steps at once. You can stop it at any step!
 > - `gcc -E main.c` -> Stops after Preprocessing.

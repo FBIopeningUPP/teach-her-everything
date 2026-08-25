@@ -1,39 +1,42 @@
 # 03 - Data Types and Memory 💾
 
-To master C, you must master Memory. 
+Programs need to remember things (like a player's health, a score, or a name). We use **Variables** for this.
 
-## What is RAM, physically?
-Imagine RAM as a giant street with billions of mailboxes. 
-* Every mailbox can hold exactly **1 Byte** (8 Bits, e.g., `01001101`).
-* Every mailbox has a unique address (e.g., Mailbox #1004).
+## What is a Variable?
+Imagine RAM (the computer's memory) as a massive wall of physical mailboxes. 
+When you create a "variable," you are asking the computer to reserve a mailbox for you and slap a name-tag on it.
 
-## Data Types (The Size of the Box)
-When you create a variable, C reserves mailboxes for you. Different types need different numbers of mailboxes.
+However, in C, you have to tell the computer **what kind of box** it is. You can't put a word in a box meant for a number!
 
-| Type | Typical Size | Description | Example |
-| :--- | :--- | :--- | :--- |
-| `char` | 1 Byte | A single ASCII character. | `char grade = 'A';` |
-| `int` | 4 Bytes | A whole number. | `int age = 25;` |
-| `float` | 4 Bytes | Decimal number (single precision). | `float pi = 3.14f;` |
-| `double`| 8 Bytes | Decimal number (double precision).| `double precise = 3.14159;` |
+## The 3 Main Boxes (Data Types)
 
-> [!info] Exercise / Tip: ASCII
-> It is important to understand that computers don't know what 'A' is. They only know numbers. A `char` is just an integer (usually from 0 to 127). The letter 'A' is just the number `65` in disguise. 'B' is `66`, 'a' is `97`, etc.
+| Type | What it holds | Example |
+| :--- | :--- | :--- |
+| `int` | Whole numbers (Integers) | `int age = 25;` |
+| `float` | Decimal numbers | `float price = 19.99;` |
+| `char` | A single letter/symbol | `char grade = 'A';` |
+
+## Writing and Reading Variables
 
 ```c
 #include <stdio.h>
+
 int main() {
-    char letter = 'A';
-    printf("As character: %c\n", letter); // Prints 'A'
-    printf("As integer: %d\n", letter);   // Prints 65
+    // 1. Create a box for an integer called "score"
+    int score;
+    
+    // 2. Put the number 100 inside the box
+    score = 100;
+    
+    // 3. Print it. The %d is a special placeholder for integers!
+    printf("My score is %d\n", score);
+    
     return 0;
 }
 ```
 
-> [!tip] Deep Dive: Signed vs Unsigned
-> By default, `int` and `char` are signed (can be negative). One bit is used as the "sign bit" (Two's Complement). 
-> - A signed `char` ranges from `-128` to `127`.
-> - An `unsigned char` uses all 8 bits for positive numbers, ranging from `0` to `255`. 
-> - You can check exact sizes on your machine using `sizeof(int)`.
+> [!tip] Placeholders for Printing
+> When using `printf`, you use `%d` to print an `int`, `%f` to print a `float`, and `%c` to print a `char`.
 
 ➡️ Next: [04 Operators and Math](04_Operators_and_Math.md)
+⬅️ Back: [02 Syntax and Structure](02_Syntax_and_Structure.md)

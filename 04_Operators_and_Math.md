@@ -1,33 +1,33 @@
-# 04 - Operators and Math 🧮
+# 04 - Math and Logic 🧮
 
-C gives you various tools to manipulate data in memory.
+Computers are essentially just giant calculators. Here is how we do math.
 
-## 1. Arithmetic Operators
-`+`, `-`, `*`, `/`, `%` (Modulo - remainder of division).
-* **Deep Dive on Division:** If you divide two integers (e.g., `5 / 2`), C performs **Integer Division** and truncates the decimal. The result is `2`, not `2.5`. To get decimals, at least one number must be a float (`5.0 / 2`).
-
-## 2. Relational & Logical Operators
-* `==`, `!=`, `>`, `<`, `>=`, `<=`
-* `&&` (Logical AND), `||` (Logical OR), `!` (Logical NOT)
-* **Short-circuiting (Deep Dive):** In `if (A && B)`, if `A` is false, C doesn't even evaluate `B` because the whole thing is already guaranteed false.
-
-## 3. Bitwise Operators (For the Curious)
-These manipulate the raw 1s and 0s in memory. Highly used in embedded systems.
-* `&` (Bitwise AND)
-* `|` (Bitwise OR)
-* `^` (Bitwise XOR)
-* `~` (Bitwise NOT / One's complement)
-* `<<` (Left Shift - multiplies by powers of 2)
-* `>>` (Right Shift - divides by powers of 2)
+## 1. Basic Math
+You have your standard operators: `+` (add), `-` (subtract), `*` (multiply), `/` (divide).
 
 ```c
-int a = 5;      // Binary: 0101
-int b = a << 1; // Shifts bits left by 1: 1010 (which is 10 in decimal)
+int a = 10;
+int b = 3;
+int total = a + b; // total is now 13
 ```
 
-## 4. Increment/Decrement
-`x++` (Post-increment) vs `++x` (Pre-increment).
-* `x++`: Use the current value of `x`, THEN add 1.
-* `++x`: Add 1 to `x` FIRST, then use the new value.
+> [!tip] Deep Dive: The Weirdness of Division
+> If you divide two integers in C (like `10 / 3`), the computer cuts off the decimal entirely! The answer will be `3`, not `3.33`. To get a decimal, you must use `float` boxes instead of `int` boxes.
+
+## 2. The Remainder (Modulo)
+The `%` operator gives you the **remainder** of division. It is incredibly useful!
+`10 % 3` equals `1` (Because 3 goes into 10 three times, leaving 1 leftover). 
+
+## 3. Asking Questions (Logic)
+We often need to compare things.
+* `>` (Greater than), `<` (Less than)
+* `>=` (Greater than or equal to), `<=` (Less than or equal to)
+* `==` (Exactly equal to) -> **Warning! Use two equals signs to compare! One equals sign `=` means "put this in the box".**
+* `!=` (Not equal to)
+
+## 4. Shortcuts
+Programmers are lazy. Instead of writing `score = score + 1;`, we use a shortcut:
+`score++;` (This means "Add 1 to score").
 
 ➡️ Next: [05 Control Flow and Loops](05_Control_Flow_and_Loops.md)
+⬅️ Back: [03 Data Types and Memory](03_Data_Types_and_Memory.md)

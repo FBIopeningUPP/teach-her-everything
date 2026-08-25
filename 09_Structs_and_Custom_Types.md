@@ -1,8 +1,10 @@
-# 09 - Structs and Custom Types 🧱
+# 09 - Structs (Custom Types) 🧱
 
-What if we want to group an `int` (age), a `float` (height), and a `char array` (name) together? We use a `struct`.
+What if you are making a video game and you need a Player? A player has a Name (text), a Score (integer), and Health (decimal). 
+Instead of keeping track of three separate variables, we can glue them together into a **Struct**.
 
-## Defining and Using a Struct
+## Creating a Struct
+A struct is like creating your very own custom Data Type (like your own custom box).
 
 ```c
 #include <stdio.h>
@@ -16,32 +18,21 @@ struct Player {
 };
 
 int main() {
-    // 2. Create an instance (allocates memory for all 3 things back-to-back)
+    // 2. Create an actual player using the blueprint
     struct Player p1;
     
-    // 3. Use the DOT operator to access members
+    // 3. Use the DOT (.) to access their specific stats
     p1.score = 100;
     p1.health = 95.5;
-    strcpy(p1.name, "Hero"); // Must use strcpy for string arrays!
+    strcpy(p1.name, "Hero"); // Copies the word "Hero" into the name array
     
-    printf("%s has %d points.", p1.name, p1.score);
+    printf("%s has %d points!\n", p1.name, p1.score);
+    
     return 0;
 }
 ```
 
-## Pointers to Structs (The Arrow Operator)
-When you have a pointer to a struct, using `(*p).score` is ugly. C gives us the Arrow Operator `->` as a shortcut.
+### 🎉 Congratulations!
+You've made it through the core logic of C programming! You understand memory, pointers, loops, and logic. You are well on your way to becoming a real programmer. Keep practicing, and don't be afraid to break things!
 
-```c
-struct Player *ptr = &p1;
-ptr->score = 200; // Exact same as (*ptr).score = 200;
-```
-
-> [!tip] Deep Dive: Memory Alignment and Padding
-> You might think the size of `struct Player` is `50 (name) + 4 (score) + 4 (health) = 58 bytes`. 
-> However, `sizeof(struct Player)` might return `60`. Why? 
-> CPUs read memory in chunks (e.g., 4 or 8 bytes at a time). The compiler injects "Padding" (empty, unused bytes) between struct members to align them to boundaries so the CPU can read them faster. 
-
----
-### 🎓 Course Complete!
-You now have the fundamental and underlying architectural knowledge to write C like an absolute pro. Good luck!
+⬅️ Back: [08 Arrays and Strings](08_Arrays_and_Strings.md)

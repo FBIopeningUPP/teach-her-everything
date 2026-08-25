@@ -1,54 +1,61 @@
-# 05 - Control Flow & Loops 🛤️🔄
+# 05 - Logic and Loops 🛤️🔄
 
-How we alter the linear execution of code.
+Code usually runs top-to-bottom. But sometimes we want to skip lines, or repeat them.
 
-## The `if-else` Statement
-Standard conditional logic. 
-* **Deep Dive:** In C, there is no Boolean data type (unless you include `<stdbool.h>`). Instead, **`0` is False**, and **any non-zero number (1, -5, 99) is True**. 
-
-```c
-if (5) { // This will ALWAYS run, because 5 is not 0.
-    printf("True!");
-}
-```
-
-## The `switch` Statement
-Used for checking a single variable against multiple exact values. Faster than long `if-else` chains because compilers can optimize it into a "jump table".
-
-```c
-int choice = 2;
-switch(choice) {
-    case 1:
-        printf("One");
-        break; // Crucial! Without break, it "falls through" to case 2.
-    case 2:
-        printf("Two");
-        break;
-    default:
-        printf("Other");
-}
-```
-
-## Loops
-
-### `while` vs `do-while`
-* `while (condition) { ... }` checks the condition BEFORE running. It might run 0 times.
-* `do { ... } while (condition);` runs the code FIRST, then checks. It is guaranteed to run at least 1 time.
-
-### The `for` loop
-Perfect for iteration. Contains 3 parts: `for( initialization ; condition ; update )`
+## The `If / Else` Statement (Making Choices)
+This allows your code to make decisions based on conditions.
 
 ```mermaid
 graph TD
-    A[Initialization: int i = 0] --> B{Condition: i < 5}
-    B -- True --> C[Execute Body]
-    C --> D[Update: i++]
-    D --> B
-    B -- False --> E[End Loop]
+    A[Start] --> B{Is age >= 18?}
+    B -- Yes --> C[Print 'You can vote!']
+    B -- No --> D[Print 'Too young.']
+    C --> E[End]
+    D --> E
 ```
 
-> [!tip] Deep Dive: The Ternary Operator
-> A compact `if-else` used for assigning values. `condition ? true_value : false_value;`
-> Example: `int max = (a > b) ? a : b;`
+```c
+int age = 20;
+
+if (age >= 18) {
+    printf("You can vote!\n");
+} else {
+    printf("Too young.\n");
+}
+```
+
+## Loops (Doing things over and over)
+If you want to print "Hello" 100 times, you don't write `printf` 100 times. You use a loop.
+
+### The `while` Loop
+Runs **as long as** a condition is true.
+
+```mermaid
+graph TD
+    A[count = 1] --> B{Is count <= 3?}
+    B -- Yes --> C[Print count]
+    C --> D[Add 1 to count]
+    D --> B
+    B -- No --> E[End Loop]
+```
+
+```c
+int count = 1;
+while (count <= 3) {
+    printf("%d\n", count);
+    count++; // If you forget this, the loop runs forever!
+}
+```
+
+### The `for` Loop
+The `for` loop is just a compact version of a `while` loop. It puts the setup, condition, and increase all on one line. It's the most common loop in programming!
+
+```c
+//   (setup; condition; increase)
+for (int i = 1; i <= 3; i++) {
+    printf("%d\n", i);
+}
+```
 
 ➡️ Next: [06 Functions and Stack](06_Functions_and_Stack.md)
+⬅️ Back: [04 Operators and Math](04_Operators_and_Math.md)

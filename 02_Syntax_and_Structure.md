@@ -1,34 +1,34 @@
-# 02 - Syntax and Structure 🏗️
+# 02 - Your First Program 🏗️
 
-Let's break down the classic Hello World program line-by-line.
+Let's look at the classic "Hello World" program. This is the absolute minimum code you need.
 
 ```c
 #include <stdio.h>
 
-int main(int argc, char *argv[]) {
+int main() {
     printf("Hello, World!\n");
     return 0;
 }
 ```
 
-## Line-by-Line Breakdown
+## Breaking it down line-by-line
 
 ### 1. `#include <stdio.h>`
-* **Simple Explanation:** "We are borrowing the Standard Input/Output dictionary from the library so we know how to print words."
-* **Deep Dive:** The angle brackets `< >` tell the preprocessor to look in the system's default include directories (like `/usr/include`). If you used quotes `"myheader.h"`, it looks in the current directory first.
+Think of this as going to the library to borrow a dictionary. `stdio.h` stands for **St**andar**d** **I**nput **O**utput. It gives our program the ability to print text to the screen!
 
-### 2. `int main(int argc, char *argv[])`
-* **Simple Explanation:** This is the main door to your house. The OS always starts running the program here.
-* **Deep Dive:** 
-  * `int`: The function returns an integer to the Operating System. `0` means success, anything else (like `1` or `-1`) means an error occurred.
-  * `argc` (Argument Count): The number of command-line arguments passed to the program.
-  * `argv` (Argument Vector): An array of strings containing the arguments. (e.g., `./program arg1` -> `argc` is 2, `argv[0]` is "./program", `argv[1]` is "arg1").
+### 2. `int main()`
+This is the **front door** of your house. Whenever the computer runs your program, it searches for `main()` and starts reading from there. 
 
-### 3. `{ ... }`
-These define a **Block** or **Scope**. Everything inside belongs to `main`.
+### 3. `{ ... }` (Curly Braces)
+These group code together. Everything inside these braces is a set of instructions that belongs to the `main` function.
 
 ### 4. `printf("Hello, World!\n");`
-* Prints formatted string. `\n` is an escape sequence representing the newline character (ASCII 10).
-* **Crucial:** Semicolons `;` are statement terminators. They tell the compiler "this instruction is over."
+* `printf` means "print formatted text".
+* `\n` is a secret code that means "Press the Enter key" (New line).
+* **Crucial Rule:** Every instruction in C **MUST** end with a semicolon `;`. It is the period at the end of a sentence. If you forget it, the compiler will panic.
+
+### 5. `return 0;`
+This tells the computer "The program finished successfully with 0 errors!"
 
 ➡️ Next: [03 Data Types and Memory](03_Data_Types_and_Memory.md)
+⬅️ Back: [01 Architecture and Compilation](01_Architecture_and_Compilation.md)

@@ -10,6 +10,7 @@ Welcome to the comprehensive, highly-detailed guide to C. This vault is designed
 ## 📅 The 2-Day Syllabus
 
 ### Day 1: The Machine & Core Logic
+0. [[00a_Before_We_Begin]] - Core prerequisites, terminal basics, and the programmer's mindset.
 1. [[01_Architecture_and_Compilation]] - How computers actually run code.
 2. [[02_Syntax_and_Structure]] - Anatomy of a C program.
 3. [[03_Data_Types_and_Memory]] - How RAM works, bits, bytes, and variables.

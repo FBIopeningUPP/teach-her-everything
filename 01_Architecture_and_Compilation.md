@@ -49,4 +49,4 @@ Now that the computer has a binary file it understands, you can run it:
 > - `gcc -S main.c` -> Stops after Compilation (outputs `.s` assembly file).
 > - `gcc -c main.c` -> Stops after Assembling (outputs `.o` object file).
 
-➡️ Next: [[02_Syntax_and_Structure]]
+➡️ Next: [02 Syntax and Structure](02_Syntax_and_Structure.md)

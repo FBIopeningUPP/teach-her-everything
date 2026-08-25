@@ -43,4 +43,4 @@ int main() {
 > [!tip] Deep Dive: Pointer Arithmetic
 > Pointers know the size of the data type they point to. If `int *p` points to address `1000`, doing `p++` will make it point to `1004` (since an `int` is 4 bytes). It jumps exactly one `int` forward in memory!
 
-➡️ Next: [[08_Arrays_and_Strings]]
+➡️ Next: [08 Arrays and Strings](08_Arrays_and_Strings.md)

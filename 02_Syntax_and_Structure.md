@@ -31,4 +31,4 @@ These define a **Block** or **Scope**. Everything inside belongs to `main`.
 * Prints formatted string. `\n` is an escape sequence representing the newline character (ASCII 10).
 * **Crucial:** Semicolons `;` are statement terminators. They tell the compiler "this instruction is over."
 
-➡️ Next: [[03_Data_Types_and_Memory]]
+➡️ Next: [03 Data Types and Memory](03_Data_Types_and_Memory.md)

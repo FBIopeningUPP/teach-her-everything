@@ -35,4 +35,4 @@ You can't compile C code without a compiler! Here is how you install GCC based o
 > [!info] Exercise / Tip
 > Take a moment to practice navigating the terminal for 5 minutes. Create a folder, go into it, and check where they are. If you aren't comfortable in the terminal, compiling C code will feel like magic instead of logic.
 
-➡️ Next: [[01_Architecture_and_Compilation]]
+➡️ Next: [01 Architecture and Compilation](01_Architecture_and_Compilation.md)

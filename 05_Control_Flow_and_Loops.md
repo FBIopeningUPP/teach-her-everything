@@ -51,4 +51,4 @@ graph TD
 > A compact `if-else` used for assigning values. `condition ? true_value : false_value;`
 > Example: `int max = (a > b) ? a : b;`
 
-➡️ Next: [[06_Functions_and_Stack]]
+➡️ Next: [06 Functions and Stack](06_Functions_and_Stack.md)

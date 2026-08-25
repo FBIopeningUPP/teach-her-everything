@@ -34,4 +34,4 @@ int main() {
 
 How do we let a function modify the original? We need to give it the memory address! (Enter Pointers...).
 
-➡️ Next: [[07_Pointers_Demystified]]
+➡️ Next: [07 Pointers Demystified](07_Pointers_Demystified.md)

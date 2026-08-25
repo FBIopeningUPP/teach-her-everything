@@ -36,4 +36,4 @@ int main() {
 > - An `unsigned char` uses all 8 bits for positive numbers, ranging from `0` to `255`. 
 > - You can check exact sizes on your machine using `sizeof(int)`.
 
-➡️ Next: [[04_Operators_and_Math]]
+➡️ Next: [04 Operators and Math](04_Operators_and_Math.md)

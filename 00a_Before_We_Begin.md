@@ -22,7 +22,17 @@ You will be using the black screen (Terminal/Command Prompt) to talk to the comp
 ## 4. The Text Editor
 You can't write code in Microsoft Word. Word adds hidden formatting (fonts, colors, sizes) that confuses the compiler. You must use a pure text editor like **VS Code**, **Notepad++**, or even just plain **Notepad**.
 
-> [!tip] Teaching Note
+## 5. Installing the C Compiler (GCC)
+You can't compile C code without a compiler! Here is how you install GCC based on your OS:
+
+* **Windows:** The easiest way is using [MSYS2](https://www.msys2.org/) or [Chocolatey](https://chocolatey.org/). If you have Chocolatey, open an Administrator PowerShell and run: `choco install mingw -y`.
+* **Mac:** Open your Terminal and run: `xcode-select --install`. This installs the Apple developer tools (which includes the compiler).
+* **Linux:** Open your terminal and run: `sudo apt install build-essential`.
+
+> [!tip] Verification
+> After installing, you must open a **brand new terminal window** (so it refreshes your PATH) and type `gcc --version`. If it prints out some version numbers, you are officially ready to code!
+
+> [!info] Teaching Note
 > Have your friend practice navigating the terminal for 5 minutes. Have them create a folder, go into it, and check where they are. If they aren't comfortable in the terminal, compiling C code will feel like magic instead of logic.
 
 ➡️ Next: [[01_Architecture_and_Compilation]]

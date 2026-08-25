@@ -1,11 +1,11 @@
 # 07 - Pointers Demystified 🎯
 
-**This is where C separates the pros from the noobs.** Take your time teaching this.
+**This is where C separates the pros from the noobs.** Take your time learning this.
 
 ## The Concept
 A pointer is simply a variable that stores a **memory address** instead of a normal value.
 
-> [!info] Teaching Analogy
+> [!info] Helpful Analogy
 > If a variable is a house with a family inside, a Pointer is a piece of paper with the house's address written on it (e.g., "123 Main St"). 
 
 ## The Two Operators
@@ -40,7 +40,7 @@ int main() {
 }
 ```
 
-> [!tip] Nerd Note: Pointer Arithmetic
+> [!tip] Deep Dive: Pointer Arithmetic
 > Pointers know the size of the data type they point to. If `int *p` points to address `1000`, doing `p++` will make it point to `1004` (since an `int` is 4 bytes). It jumps exactly one `int` forward in memory!
 
 ➡️ Next: [[08_Arrays_and_Strings]]

@@ -36,7 +36,7 @@ char name2[] = "Hello"; // The compiler adds \0 automatically!
 int len = strlen(name2); // Scans memory until it hits '\0', returns 5.
 ```
 
-> [!tip] Nerd Note: String Literals
+> [!tip] Deep Dive: String Literals
 > If you do `char *str = "Hello";`, this is stored in **Read-Only Memory**. If you try to do `str[0] = 'J';`, your program will crash (Segmentation Fault). Always use `char str[] = "Hello";` if you want a modifiable array on the Stack.
 
 ➡️ Next: [[09_Structs_and_Custom_Types]]

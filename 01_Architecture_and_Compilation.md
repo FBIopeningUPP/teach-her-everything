@@ -43,7 +43,7 @@ Now that the computer has a binary file it understands, you can run it:
 ```
 *(The `.\` tells the terminal "look in the current folder" for `myprogram.exe`)*
 
-> [!tip] Nerd Note: Compilation Flags
+> [!tip] Deep Dive: Compilation Flags
 > When you run `gcc main.c`, it does all 4 steps at once. You can stop it at any step!
 > - `gcc -E main.c` -> Stops after Preprocessing.
 > - `gcc -S main.c` -> Stops after Compilation (outputs `.s` assembly file).

@@ -14,12 +14,12 @@ int main(int argc, char *argv[]) {
 ## Line-by-Line Breakdown
 
 ### 1. `#include <stdio.h>`
-* **Beginner:** "We are borrowing the Standard Input/Output dictionary from the library so we know how to print words."
-* **Nerd Note:** The angle brackets `< >` tell the preprocessor to look in the system's default include directories (like `/usr/include`). If you used quotes `"myheader.h"`, it looks in the current directory first.
+* **Simple Explanation:** "We are borrowing the Standard Input/Output dictionary from the library so we know how to print words."
+* **Deep Dive:** The angle brackets `< >` tell the preprocessor to look in the system's default include directories (like `/usr/include`). If you used quotes `"myheader.h"`, it looks in the current directory first.
 
 ### 2. `int main(int argc, char *argv[])`
-* **Beginner:** This is the main door to your house. The OS always starts running the program here.
-* **Nerd Note:** 
+* **Simple Explanation:** This is the main door to your house. The OS always starts running the program here.
+* **Deep Dive:** 
   * `int`: The function returns an integer to the Operating System. `0` means success, anything else (like `1` or `-1`) means an error occurred.
   * `argc` (Argument Count): The number of command-line arguments passed to the program.
   * `argv` (Argument Vector): An array of strings containing the arguments. (e.g., `./program arg1` -> `argc` is 2, `argv[0]` is "./program", `argv[1]` is "arg1").

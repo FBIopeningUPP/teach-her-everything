@@ -32,7 +32,7 @@ You can't compile C code without a compiler! Here is how you install GCC based o
 > [!tip] Verification
 > After installing, you must open a **brand new terminal window** (so it refreshes your PATH) and type `gcc --version`. If it prints out some version numbers, you are officially ready to code!
 
-> [!info] Teaching Note
-> Have your friend practice navigating the terminal for 5 minutes. Have them create a folder, go into it, and check where they are. If they aren't comfortable in the terminal, compiling C code will feel like magic instead of logic.
+> [!info] Exercise / Tip
+> Take a moment to practice navigating the terminal for 5 minutes. Create a folder, go into it, and check where they are. If you aren't comfortable in the terminal, compiling C code will feel like magic instead of logic.
 
 ➡️ Next: [[01_Architecture_and_Compilation]]

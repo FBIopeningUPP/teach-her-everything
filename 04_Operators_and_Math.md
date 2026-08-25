@@ -4,14 +4,14 @@ C gives you various tools to manipulate data in memory.
 
 ## 1. Arithmetic Operators
 `+`, `-`, `*`, `/`, `%` (Modulo - remainder of division).
-* **Nerd Note on Division:** If you divide two integers (e.g., `5 / 2`), C performs **Integer Division** and truncates the decimal. The result is `2`, not `2.5`. To get decimals, at least one number must be a float (`5.0 / 2`).
+* **Deep Dive on Division:** If you divide two integers (e.g., `5 / 2`), C performs **Integer Division** and truncates the decimal. The result is `2`, not `2.5`. To get decimals, at least one number must be a float (`5.0 / 2`).
 
 ## 2. Relational & Logical Operators
 * `==`, `!=`, `>`, `<`, `>=`, `<=`
 * `&&` (Logical AND), `||` (Logical OR), `!` (Logical NOT)
-* **Short-circuiting (Nerd Note):** In `if (A && B)`, if `A` is false, C doesn't even evaluate `B` because the whole thing is already guaranteed false.
+* **Short-circuiting (Deep Dive):** In `if (A && B)`, if `A` is false, C doesn't even evaluate `B` because the whole thing is already guaranteed false.
 
-## 3. Bitwise Operators (For the True Nerds)
+## 3. Bitwise Operators (For the Curious)
 These manipulate the raw 1s and 0s in memory. Highly used in embedded systems.
 * `&` (Bitwise AND)
 * `|` (Bitwise OR)

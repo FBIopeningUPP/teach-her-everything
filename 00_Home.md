@@ -1,10 +1,10 @@
 # 🚀 Masterclass: C Programming (Teaching Guide)
 
-Welcome to the comprehensive, highly-detailed guide to C. This vault is designed for **you (the teacher)** to guide an absolute beginner, while providing deep-dive "Nerd Notes" so you fully understand the mechanics under the hood.
+Welcome to the comprehensive, highly-detailed guide to C. This vault is designed specifically for **you** to learn from scratch, It includes "Deep Dives" so you can understand the mechanics under the hood.
 
 > [!info] How to use this vault
 > - **Main Text:** The simple, beginner-friendly analogy to explain to your friend.
-> - **Nerd Notes (Callouts):** Deep technical details for you, so you can answer "but why?" questions.
+> - **Deep Dives (Callouts):** Technical details to help you understand exactly *why* things work.
 > - **Visuals:** Use the Mermaid diagrams to explain concepts on a whiteboard.
 
 ## 📅 The 2-Day Syllabus

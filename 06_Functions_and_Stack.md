@@ -1,6 +1,6 @@
 # 06 - Functions and The Call Stack 🥞
 
-Functions break code into reusable modules. But to teach this well, you must explain **The Call Stack**.
+Functions break code into reusable modules. To really understand this, we must look at **The Call Stack**.
 
 ## What is the Call Stack?
 When a program runs, memory is divided into sections. One crucial section is the **Stack**. 
@@ -29,8 +29,8 @@ int main() {
     return 0;
 }
 ```
-> [!info] Teaching Note
-> Tell your friend: "If I give you a photocopy of a recipe, and you cross out 'sugar' and write 'salt', my original recipe at home is completely unchanged. C makes photocopies of variables."
+> [!info] Exercise / Tip
+> Think of it this way: "If I give you a photocopy of a recipe, and you cross out 'sugar' and write 'salt', my original recipe at home is completely unchanged. C makes photocopies of variables."
 
 How do we let a function modify the original? We need to give it the memory address! (Enter Pointers...).
 

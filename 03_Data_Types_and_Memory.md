@@ -17,8 +17,8 @@ When you create a variable, C reserves mailboxes for you. Different types need d
 | `float` | 4 Bytes | Decimal number (single precision). | `float pi = 3.14f;` |
 | `double`| 8 Bytes | Decimal number (double precision).| `double precise = 3.14159;` |
 
-> [!info] Teaching Note: ASCII
-> Explain to your friend that computers don't know what 'A' is. They only know numbers. A `char` is just an integer (usually from 0 to 127). The letter 'A' is just the number `65` in disguise. 'B' is `66`, 'a' is `97`, etc.
+> [!info] Exercise / Tip: ASCII
+> It is important to understand that computers don't know what 'A' is. They only know numbers. A `char` is just an integer (usually from 0 to 127). The letter 'A' is just the number `65` in disguise. 'B' is `66`, 'a' is `97`, etc.
 
 ```c
 #include <stdio.h>
@@ -30,7 +30,7 @@ int main() {
 }
 ```
 
-> [!tip] Nerd Note: Signed vs Unsigned
+> [!tip] Deep Dive: Signed vs Unsigned
 > By default, `int` and `char` are signed (can be negative). One bit is used as the "sign bit" (Two's Complement). 
 > - A signed `char` ranges from `-128` to `127`.
 > - An `unsigned char` uses all 8 bits for positive numbers, ranging from `0` to `255`. 

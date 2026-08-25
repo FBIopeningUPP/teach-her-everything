@@ -37,11 +37,11 @@ struct Player *ptr = &p1;
 ptr->score = 200; // Exact same as (*ptr).score = 200;
 ```
 
-> [!tip] Nerd Note: Memory Alignment and Padding
+> [!tip] Deep Dive: Memory Alignment and Padding
 > You might think the size of `struct Player` is `50 (name) + 4 (score) + 4 (health) = 58 bytes`. 
 > However, `sizeof(struct Player)` might return `60`. Why? 
 > CPUs read memory in chunks (e.g., 4 or 8 bytes at a time). The compiler injects "Padding" (empty, unused bytes) between struct members to align them to boundaries so the CPU can read them faster. 
 
 ---
 ### 🎓 Course Complete!
-You now have the fundamental and underlying architectural knowledge to teach C like an absolute pro. Good luck!
+You now have the fundamental and underlying architectural knowledge to write C like an absolute pro. Good luck!

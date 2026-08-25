@@ -4,7 +4,7 @@ How we alter the linear execution of code.
 
 ## The `if-else` Statement
 Standard conditional logic. 
-* **Nerd Note:** In C, there is no Boolean data type (unless you include `<stdbool.h>`). Instead, **`0` is False**, and **any non-zero number (1, -5, 99) is True**. 
+* **Deep Dive:** In C, there is no Boolean data type (unless you include `<stdbool.h>`). Instead, **`0` is False**, and **any non-zero number (1, -5, 99) is True**. 
 
 ```c
 if (5) { // This will ALWAYS run, because 5 is not 0.
@@ -47,7 +47,7 @@ graph TD
     B -- False --> E[End Loop]
 ```
 
-> [!tip] Nerd Note: The Ternary Operator
+> [!tip] Deep Dive: The Ternary Operator
 > A compact `if-else` used for assigning values. `condition ? true_value : false_value;`
 > Example: `int max = (a > b) ? a : b;`
 
